@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="css/homepagecss.css">
+    <script src="js/homepage.js" defer></script>
+</head>
+<body>
+    <div class="homepage-container">
+        <div class="hamburger-icon" onclick="toggleNav()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="logo">
+            <img src="assets/lightlogo.png" alt="Site Logo">
+            <p>MASTER YOUR FLOW</p>
+            <h1 class="header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</h1>
+            <a href="#" class="shop-now-btn">Shop Now</a>
+        </div>
+        <div class="product-image">
+            <img src="assets/razerkb.jpg" alt="Razer Keyboard">
+            <div class="product-overlay">
+                <div class="product-details">
+                    <h2>Razer Blackwidow</h2>
+                    <a href="product.html" class="shop-now-btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <div id="myNav" class="hamburger-overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="hamburger-overlay-content">
+                <a href="#">My Account </i></a>
+                <a href="#">Shop </i></a>
+                <a href="#">Discover </i></a>
+            </div>
+        </div>
+        <!-- Homepage content goes here -->
+    </div>
+</body>
+</html>

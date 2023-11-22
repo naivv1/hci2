@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150vh;
+}
+
+.homepage-container {
+    position: relative;
+    text-align: center;
+    max-width: 350px;
+    width: 80%;
+    height: 150vh;
+    background: url('../assets/bg.png') no-repeat;
+    background-position: top;
+    background-size: 350px;
+    background-color: #fad5d5;
+}
+
+.logo img {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo p {
+    font-weight: bold;
+    font-size: 30px;
+    margin: 15px 0;
+}
+
+.header-text {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 10px 35px;
+}
+
+.shop-now-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #cf4493;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 73px;
+}
+
+.product-image {
+    position: relative;
+    margin-top: 200px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.product-image img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.product-image:hover img {
+    filter: brightness(50%);
+}
+
+.product-image:hover .product-overlay {
+    width: 100%;
+    opacity: 1;
+    background-color: rgba(128, 128, 128, 0.5); /* Grey color with 50% opacity */
+}
+
+.product-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.product-details {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #333;
+}
+
+.product-details .shop-now-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #cf4493;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 80px;
+}
+
+.hamburger-icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.hamburger-overlay {
+    height: 100%;
+    width: 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: #f5f5f5;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.hamburger-overlay a {
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border-bottom: 1px solid #ddd;
+}
+
+.hamburger-overlay a:last-child {
+    border-bottom: none;
+}
+
+.hamburger-overlay a::after {
+    font-family: 'Font Awesome 5 Free';
+    margin-left: 5px;
+    content: '  \f105'; /* Font Awesome code for the greater than sign */
+    color: #818181;
+}
+
+.hamburger-overlay a:hover, .hamburger-overlay a:focus {
+    color: #f1f1f1;
+    background-color: #ddd;
+}
+
+
+.hamburger-overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #818181;
+}
+
+.hamburger-overlay-content {
+    padding: 0px;
+    text-align: left;
+    position: absolute;
+    top: 20px; /* Adjust the top position as needed */
+    left: 20px; /* Adjust the left position as needed */
+}
+
+.homepage-container .closebtn {
+    right: 0%;
+}
+
+@media screen and (max-height: 450px) {
+    .product-image:hover .product-overlay {
+        top: 80%; /* Adjust the position as needed */
+    }
+
+    .hamburger-overlay a {
+        font-size: 18px;
+    }
+
+    .hamburger-overlay .closebtn {
+        font-size: 20px;
+        top: 5px;
+        right: 10px;
+    }
+}

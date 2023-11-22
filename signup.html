@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="css/signupcss.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <img src="assets/lightlogo.png" alt="Site Logo">
+            <p>Create a new Pixler ID</p>
+        </div>
+        <form id="signupForm"> <!-- Added an ID to the form for clarity -->
+            <div class="error-container">
+                <p id="error-message" class="error-message"></p>
+            </div>
+
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" placeholder="Enter your first name">
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Enter your last name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password">
+
+            <button type="submit">Create Account</button>
+            <p class="or-line"><span>OR</span></p>
+            <div class="social-icons">
+                <i class="fab fa-apple" onclick="loginWith('apple')"></i>
+                <i class="fab fa-facebook" onclick="loginWith('facebook')"></i>
+                <i class="fab fa-google" onclick="loginWith('google')"></i>
+            </div>
+            
+        </form>
+
+        <!-- Moved the "Create an Account" container inside the login-container -->
+        <div class="create-account-container">
+            <a href="index.html" class="create-account-text">Already have an account? Login</a>
+        </div>
+        <p class="captcha-text">This site is protected by hCaptcha and its Privacy Policy and Terms of Service apply.</p>
+    </div>
+
+    <script src="js/signup.js" defer></script> <!-- Make sure the correct JavaScript file is linked -->
+</body>
+</html>

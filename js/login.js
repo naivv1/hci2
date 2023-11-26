@@ -18,7 +18,7 @@ function validateCredentials() {
     // Check if the entered credentials are correct
     if (username === "admin" && password === "admin") {
         // Redirect to a success page or perform other actions
-        window.location.href = "homepage.html";
+        window.location.href = "index.html";
     } else {
         // Display an error message
         errorMessage.innerText = "Incorrect username or password. Please try again.";
